@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/icons8-microsoft-todo-2019.svg" alt="myTask">
+                </a>
+            </div>
+            <div>
+                <h2>TASK MANAGER</h2>
+            </div>
+            <div>
+                <a href="./html/taskView.html">View Tasks</a>
+            </div>
+        </header>
+    </nav>
+
+    <div class="row1">
+
+        <div class="overlay" id="overlay">
+            <div class="welcome">
+                <img src="./img/icons8-microsoft-todo-2019.svg" alt="myTask">
+                <h3>Welcome to your task manager</h3>
+                <p>Click Here to Continue</p>
+                <div class="continueBtn">
+                    <button id="hideBtn">Continue</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="logContainer" id="logContainer">
+            <div class="login">
+                <form action="">
+                    <h2>Login</h2>
+                    <div>
+                        <input type="text" placeholder="Username" id="username">
+                        <label for="" id="usernameError" class="error"></label>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" id="password">
+                        <label for="" id="passwordError" class="error"></label>
+                    </div>
+                    <p id="loginError"></p>
+                    <p>
+                        Don't have an account? <a href="./html/signUp.html">Sign up here</a>
+                    </p>
+                    <div class="loginBtn">
+                        <button id="loginBtn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>View Tasks</title>
+</head>
+
+<body>
+
+    <nav>
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/icons8-microsoft-todo-2019.svg" alt="myTask">
+                </a>
+            </div>
+            <div>
+                <h2>TASK MANAGER</h2>
+            </div>
+            <div>
+                <a href="../index.html">Logout</a>
+            </div>
+        </header>
+    </nav>
+
+    <div class="general flex">
+        <div class="body">
+            <div class="container">
+                <form action="">
+                    <div>
+                        <label for="">Title</label><br>
+                        <input type="text" placeholder="Task Name" id="taskName">
+                    </div>
+                    <div>
+                        <label for="">Task
+                            <span class="addTask">
+                                <button id="addTaskBtn">Add Task</button>
+                            </span>
+                        </label><br>
+                        <div class="lists" id="lists">
+                                    <input type="text" placeholder="Type Task" id="newTask">
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Task Status</label><br>
+                        <select name="" id="status">
+                            <option value="" disabled="disabled">Status</option>
+                            <option value="Pending" selected="true">Pending</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Category</label><br>
+                        <select name="" id="category">
+                            <option value="" selected="true" disabled="disabled">Select Category</option>
+                            <option value="Business">Business</option>
+                            <option value="Education">Education</option>
+                            <option value="Family">Family</option>
+                            <option value="Personal">Personal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Task Priority</label><br>
+                        <select name="" id="priority">
+                            <option value="" selected="true" disabled="disabled">Task Priority</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Due Date</label><br>
+                        <input type="date" placeholder="Date" class="timeInput" id="dueDate">
+                    </div>
+                    <div>
+                        <label for="">Due Time</label><br>
+                        <input type="time" placeholder="time" class="timeInput" id="dueTime">
+                    </div>
+                    <label for="" class="error" id="error"></label>
+                    <div class="taskBtn">
+                        <button id="saveTaskBtn">SAVE TASK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card" id="card">
+            <div class="tasks" id="tasksCard">
+                <!-- <div class="taskBody">
+                    <p class="dateCreated">Date Created:</p>
+                    <h2>TITLE:</h2>
+                    <div class="background">
+                        <div>
+                            <h3>TASKS CREATED:</h3>
+                            <div>
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>TASK STATUS:</h3>
+                    <h3>TASK CATEGORY:</h3>
+                    <h3>TASK PRIORITY: <span id="priorityColor">High</span></h3>
+                    <h3>DUE DATE:</h3>
+                    <h3>DUE TIME:</h3>
+                    <div class="actions flex">
+                        <div class="btn">
+                            <button id="deleteBtn">Delete Task</button>
+                            <button id="editBtn">Edit Task</button>
+                        </div>
+                        <div class="checked">
+                            <label for="">TASK COMPLETED</label>
+                            <input type="checkbox" name="" id="checked">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/task.js"></script>
+</body>
+
+</html>

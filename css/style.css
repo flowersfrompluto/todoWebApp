@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sometype Mono', monospace;
+}
+
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background-color: navy;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+label {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.general {
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.error {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    font-size: 10px;
+    color: #d60000;
+}
+
+.body {
+    width: 30%;
+    padding-top: 70px;
+    height: 100vh;
+
+    position: fixed;
+    background-color: gainsboro;
+}
+
+.container {
+    width: 100%;
+    /* width: 100%; */
+    /* border-radius: 25px; */
+    /* box-shadow: 2px 2px 5px grey; */
+}
+
+.login {
+    width: 35%;
+    margin: auto;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff93;
+}
+
+
+select,
+.login input,
+.signup input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #2c7efa;
+    background-color: transparent;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    font-weight: 300;
+}
+
+.container input,
+.container select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #2c7efa;
+    background-color: transparent;
+    padding: 5px 10px;
+    outline: none;
+    color: black;
+    font-weight: 300;
+}
+
+select option {
+    color: black;
+}
+
+.signup {
+    width: 35%;
+    margin: auto;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff93;
+}
+
+
+.lists {
+    padding: 0;
+    width: 100%;
+    padding-top: 2px;
+}
+
+.lists .checkbox {
+    padding: 0;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    padding: 0px;
+    outline: none;
+}
+
+.row1 {
+    background-image: url(../img/auth-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+form {
+    padding: 25px;
+    color: white;
+}
+
+.container form {
+    padding: 25px;
+    color: black;
+}
+
+form div {
+    padding: 5px;
+}
+
+.loginBtn {
+    text-align: center;
+}
+
+.loginBtn button,
+.taskBtn button,
+.continueBtn button {
+    background-color: #01bb01;
+    color: white;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.loginBtn button:hover,
+.taskBtn button:hover,
+.continueBtn button:hover {
+    background-color: #029d02;
+}
+
+ul {
+    padding-left: 25px;
+    width: 100%;
+}
+
+li {
+    width: 100%;
+}
+
+.dateCreated {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.tasks {
+    width: 98%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    padding-top: 50px;
+    width: 100%;
+    padding-left: 450px;
+}
+
+.taskBody {
+    width: 100%;
+    padding: 15px;
+    background: rgb(255, 201, 225);
+    background: linear-gradient(90deg, rgba(255, 201, 225, 1) 0%, rgba(187, 218, 255, 1) 100%);
+    background: rgb(184, 175, 249);
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.img {
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.img h2 {
+    padding-left: 25px;
+}
+
+.img img {
+    width: 50px;
+}
+
+.checked {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.checked input {
+    width: 25px;
+    height: 25px;
+}
+
+.flex p {
+    padding: 0px 5px 5px 5px;
+}
+
+.taskBody h3 {
+    padding-bottom: 10px;
+}
+
+.row1 {
+    height: 100vh;
+}
+
+.row1 h2 {
+    padding: 20px 0px;
+}
+
+.row1 p {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.row1 a {
+    color: #2c7efa;
+}
+
+.overlay {
+    background-color: #131313ea;
+    background-image: url(../img/unsplash-Benjamin\ Behre.jpg);
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    color: whitesmoke;
+}
+
+.welcome {
+    padding-top: 250px;
+}
+
+.welcome img {
+    width: 100px;
+}
+
+.welcome h3 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.welcome p {
+    font-size: 30px;
+}
+
+.logContainer {
+    padding-top: 220px;
+}
+
+.signUpContainer {
+    padding-top: 100px;
+}
+
+.addTask button {
+    background-color: #01bb01;
+    color: white;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.addTask {
+    float: right;
+}
+
+.checked {
+    padding-left: 60px;
+}
+.actions{
+    justify-content: space-between;
+}
+#deleteBtn {
+    background-color: #d60000;
+    color: white;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+#editBtn {
+    background-color: #01bb01;
+    color: white;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#deleteBtn:hover {
+    background-color: #980000;
+}
+#editBtn:hover {
+    background-color: #029d02;
+}
+
+.checked label {
+    padding-right: 10px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

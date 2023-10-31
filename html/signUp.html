@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>signUp</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/icons8-microsoft-todo-2019.svg" alt="myTask">
+                </a>
+            </div>
+            <div>
+                <h2>TASK MANAGER</h2>
+            </div>
+            <div>
+                <!-- <a href="../index.html">Login</a> -->
+            </div>
+        </header>
+    </nav>
+
+    <div class="row1">
+        <div class="signUpContainer">
+            <div class="signup">
+                <form action="">
+                    <h2>Create Account</h2>
+                    <div>
+                        <input type="text" placeholder="Enter First Name" id="fname">
+                        <label for="" id="fnameError" class="error"></label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter Last Name" id="lname">
+                        <label for="" id="lnameError" class="error"></label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Username" id="username">
+                        <label for="" id="usernameError" class="error"></label>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Enter Email" id="email">
+                        <label for="" id="emailError" class="error"></label>
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Phone Number" id="phoneNumber">
+                        <label for="" id="phoneError" class="error"></label>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" id="password">
+                        <label for="" id="passwordError" class="error"></label>
+                    </div>
+                    <div>
+                        <select name="" id="gender">
+                            <option value="" selected="true" disabled="disabled">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <label for="" id="genderError" class="error"></label>
+                    </div>
+                    <p>
+                        Have an account? <a href="../index.html">Login</a>
+                    </p>
+                    <div class="loginBtn">
+                        <button id="signUpBtn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/signup.js"></script>
+</body>
+</html>
